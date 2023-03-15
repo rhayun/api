@@ -59,6 +59,7 @@ class Tv extends AbstractModel
         'vote_average',
         'vote_count',
         'type',
+        'tagline',
     ];
     /**
      * Credits
@@ -242,6 +243,10 @@ class Tv extends AbstractModel
      * @var GenericCollection
      */
     protected $episodeGroups;
+    /**
+     * @var string
+     */
+    private $tagline;
 
     /**
      * Constructor
@@ -1090,6 +1095,25 @@ class Tv extends AbstractModel
     public function setEpisodeGroups(GenericCollection $episodeGroups): Tv
     {
         $this->episodeGroups = $episodeGroups;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTagline()
+    {
+        return $this->tagline;
+    }
+
+    /**
+     * @param string $tagline
+     * @return self
+     */
+    public function setTagline($tagline)
+    {
+        $this->tagline = $tagline;
 
         return $this;
     }
