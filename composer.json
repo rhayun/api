@@ -44,7 +44,7 @@
         "psr/http-client-implementation": "^1",
         "psr/http-factory": "^1",
         "psr/http-factory-implementation": "^1",
-        "psr/http-message": "^1"
+        "psr/http-message": "^2"
     },
     "require-dev": {
         "nyholm/psr7": "^1.2",
